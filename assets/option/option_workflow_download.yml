@@ -34,7 +34,7 @@ plugins:
         password: ${EMAIL_PASS}
         title: ${EMAIL_TITLE}
         content: ${EMAIL_CONTENT}
-
+        
   after_photo:
     # 把章节的所有图片合并为一个pdf的插件
     # 使用前需要安装依赖库: [pip install img2pdf]
@@ -42,3 +42,5 @@ plugins:
       kwargs:
         pdf_dir: D:/pdf/ # pdf存放文件夹
         filename_rule: Pid # pdf命名规则，P代表photo, id代表使用photo.id也就是章节id
+        encrypt: # pdf密码，可选配置项
+          password: 123 # 密码
